@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swiggy Clone - Order Food &amp; Groceries Online</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <img class="deco deco-left" src="images/Veggies_new.png" alt="">
+    <img class="deco deco-right" src="images/Sushi_replace.png" alt="">
+
+    <header class="nav container">
+      <a href="#" class="brand"><img src="images/swiggy_logo_white.png" alt="Swiggy"></a>
+      <nav class="nav-links">
+        <a href="#" class="nav-text">Swiggy Corporate</a>
+        <a href="#" class="nav-text">Partner with us</a>
+        <a href="#" class="btn-outline">Get the App <span>&#8599;</span></a>
+        <a href="#" class="btn-black">Sign in</a>
+      </nav>
+    </header>
+
+    <div class="finder">
+      <label class="loc">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#ff5200"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <select aria-label="Choose location">
+          <option>Railway Station Road, Ci…</option>
+          <option>Civil Lines</option>
+          <option>Sadar Bazaar</option>
+          <option>Detect my location</option>
+        </select>
+      </label>
+      <form class="search" onsubmit="return false">
+        <input type="text" placeholder="Search for restaurant, item or more">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#686b78" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      </form>
+    </div>
+
+    <div class="hero-cards">
+      <a href="#" class="hero-card"><img src="images/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png" alt="Food Delivery from restaurants - up to 60% off"></a>
+      <a href="#" class="hero-card"><img src="images/7a7904a7-e0a9-4466-8226-715999664e83_IM2BU.png" alt="Instamart instant grocery - up to 60% off"></a>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <section class="carousel food-carousel" id="food">
+      <input type="radio" name="food-pos" id="food-start" class="pos" checked>
+      <input type="radio" name="food-pos" id="food-end" class="pos">
+      <div class="section-head">
+        <h2>Order our best food options</h2>
+        <div class="arrows">
+          <label for="food-start" class="arrow prev" aria-label="Previous">&#8592;</label>
+          <label for="food-end" class="arrow next" aria-label="Next">&#8594;</label>
+        </div>
+      </div>
+      <div class="viewport">
+        <div class="track">
+          <a href="#" class="food-item"><img src="images/North Indian.png" alt="North Indian" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Chinese.png" alt="Chinese" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/pizza.png" alt="Pizza" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/dosa.png" alt="Dosa" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/biryani.png" alt="Biryani" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/pastry.png" alt="Pastry" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/burger.png" alt="Burger" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/pasta.png" alt="Pasta" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/cake.png" alt="Cake" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/noodles.png" alt="Noodles" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/rolls.png" alt="Rolls" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Ice Cream.png" alt="Ice Cream" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/desserts.png" alt="Desserts" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/salad.png" alt="Salad" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/South Indian.png" alt="South Indian" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Chole Bhature.png" alt="Chole Bhature" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Shawarma.png" alt="Shawarma" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Paratha.png" alt="Paratha" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/rasmalai.png" alt="Rasmalai" loading="lazy"></a>
+          <a href="#" class="food-item"><img src="images/Jalebi.png" alt="Jalebi" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel gro-carousel" id="gro">
+      <input type="radio" name="gro-pos" id="gro-start" class="pos" checked>
+      <input type="radio" name="gro-pos" id="gro-end" class="pos">
+      <div class="section-head">
+        <h2>Shop groceries on Instamart</h2>
+        <div class="arrows">
+          <label for="gro-start" class="arrow prev" aria-label="Previous">&#8592;</label>
+          <label for="gro-end" class="arrow next" aria-label="Next">&#8594;</label>
+        </div>
+      </div>
+      <div class="viewport">
+        <div class="track">
+          <a href="#" class="gro-item"><img src="images/fresh-vegetable.png" alt="Fresh Vegetables" loading="lazy"><span>Fresh Vegetables</span></a>
+          <a href="#" class="gro-item"><img src="images/fresh-fruits.png" alt="Fresh Fruits" loading="lazy"><span>Fresh Fruits</span></a>
+          <a href="#" class="gro-item"><img src="images/dairy-bread-eggs.png" alt="Dairy, Bread and Eggs" loading="lazy"><span>Dairy, Bread and Eggs</span></a>
+          <a href="#" class="gro-item"><img src="images/rice-atta-dals.png" alt="Rice, Atta and Dals" loading="lazy"><span>Rice, Atta and Dals</span></a>
+          <a href="#" class="gro-item"><img src="images/masalas-dry-fruits.png" alt="Masalas and Dry Fruits" loading="lazy"><span>Masalas and Dry Fruits</span></a>
+          <a href="#" class="gro-item"><img src="images/oils-ghee.png" alt="Oils and Ghee" loading="lazy"><span>Oils and Ghee</span></a>
+          <a href="#" class="gro-item"><img src="images/munchies.png" alt="Munchies" loading="lazy"><span>Munchies</span></a>
+          <a href="#" class="gro-item"><img src="images/breakfast.png" alt="Breakfast and Instant Food" loading="lazy"><span>Breakfast and Instant Food</span></a>
+          <a href="#" class="gro-item"><img src="images/frozen.png" alt="Frozen and Packaged Food" loading="lazy"><span>Frozen Food</span></a>
+          <a href="#" class="gro-item"><img src="images/meat-fish.png" alt="Meat and Fish" loading="lazy"><span>Meat and Fish</span></a>
+          <a href="#" class="gro-item"><img src="images/cold-drinks.png" alt="Cold Drinks and Juices" loading="lazy"><span>Cold Drinks and Juices</span></a>
+          <a href="#" class="gro-item"><img src="images/tea-coffee.png" alt="Tea, Coffee and More" loading="lazy"><span>Tea, Coffee and More</span></a>
+          <a href="#" class="gro-item"><img src="images/biscuits.png" alt="Biscuits and Cookies" loading="lazy"><span>Biscuits and Cookies</span></a>
+          <a href="#" class="gro-item"><img src="images/ice-creams.png" alt="Ice Creams and More" loading="lazy"><span>Ice Creams and More</span></a>
+          <a href="#" class="gro-item"><img src="images/pet-care.png" alt="Pet Care" loading="lazy"><span>Pet Care</span></a>
+          <a href="#" class="gro-item"><img src="images/cleaning.png" alt="Cleaning Essentials" loading="lazy"><span>Cleaning Essentials</span></a>
+          <a href="#" class="gro-item"><img src="images/hair-care.png" alt="Hair Care" loading="lazy"><span>Hair Care</span></a>
+          <a href="#" class="gro-item"><img src="images/beauty.png" alt="Beauty and Grooming" loading="lazy"><span>Beauty and Grooming</span></a>
+          <a href="#" class="gro-item"><img src="images/baby-care.png" alt="Baby Care" loading="lazy"><span>Baby Care</span></a>
+          <a href="#" class="gro-item"><img src="images/office-electricals.png" alt="Office and Electricals" loading="lazy"><span>Office and Electricals</span></a>
+          <a href="#" class="gro-item"><img src="images/sauces.png" alt="Sauces and Spreads" loading="lazy"><span>Sauces and Spreads</span></a>
+          <a href="#" class="gro-item"><img src="images/personal-care.png" alt="Personal Care" loading="lazy"><span>Personal Care</span></a>
+          <a href="#" class="gro-item"><img src="images/home-lifestyle.png" alt="Home and Lifestyle" loading="lazy"><span>Home and Lifestyle</span></a>
+          <a href="#" class="gro-item"><img src="images/paan-corner.png" alt="Paan Corner" loading="lazy"><span>Paan Corner</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- APP BANNER -->
+    <section class="app-banner">
+      <img src="images/App_download_banner.png" alt="Get the Swiggy App now! Scan to download">
+    </section>
+
+    <!-- CITIES -->
+    <section class="cities">
+      <h2>Cities with food delivery</h2>
+      <input type="checkbox" id="more-cities" class="more-toggle">
+      <div class="city-grid">
+        <a href="#" class="city">Order food online in Bangalore</a>
+        <a href="#" class="city">Order food online in Gurgaon</a>
+        <a href="#" class="city">Order food online in Hyderabad</a>
+        <a href="#" class="city">Order food online in Delhi</a>
+        <a href="#" class="city">Order food online in Mumbai</a>
+        <a href="#" class="city">Order food online in Pune</a>
+        <a href="#" class="city">Order food online in Kolkata</a>
+        <a href="#" class="city">Order food online in Chennai</a>
+        <a href="#" class="city">Order food online in Ahmedabad</a>
+        <a href="#" class="city">Order food online in Chandigarh</a>
+        <a href="#" class="city">Order food online in Jaipur</a>
+        <a href="#" class="city extra">Order food online in Lucknow</a>
+        <a href="#" class="city extra">Order food online in Kochi</a>
+        <a href="#" class="city extra">Order food online in Indore</a>
+        <a href="#" class="city extra">Order food online in Nagpur</a>
+        <a href="#" class="city extra">Order food online in Bhopal</a>
+        <a href="#" class="city extra">Order food online in Surat</a>
+        <a href="#" class="city extra">Order food online in Vadodara</a>
+        <a href="#" class="city extra">Order food online in Noida</a>
+        <a href="#" class="city extra">Order food online in Ghaziabad</a>
+        <a href="#" class="city extra">Order food online in Mathura</a>
+        <a href="#" class="city extra">Order food online in Agra</a>
+        <a href="#" class="city extra">Order food online in Patna</a>
+        <a href="#" class="city extra">Order food online in Coimbatore</a>
+        <a href="#" class="city extra">Order food online in Visakhapatnam</a>
+        <a href="#" class="city extra">Order food online in Bhubaneswar</a>
+        <a href="#" class="city extra">Order food online in Dehradun</a>
+        <label for="more-cities" class="city show-more">Show More <b>&#8964;</b></label>
+        <label for="more-cities" class="city show-less">Show Less <b class="up">&#8964;</b></label>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <img src="images/Group.svg" alt="Swiggy">
+          <p>&copy; 2026 Swiggy Limited</p>
+        </div>
+
+        <div class="f-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a><a href="#">Swiggy Corporate</a><a href="#">Careers</a>
+          <a href="#">Team</a><a href="#">Swiggy One</a><a href="#">Swiggy Instamart</a>
+        </div>
+
+        <div class="f-col">
+          <h4>Contact us</h4>
+          <a href="#">Help &amp; Support</a><a href="#">Partner With Us</a><a href="#">Ride With Us</a>
+          <h4 class="gap">Legal</h4>
+          <a href="#">Terms &amp; Conditions</a><a href="#">Cookie Policy</a><a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="f-col">
+          <h4>Available in:</h4>
+          <a href="#">Bangalore</a><a href="#">Gurgaon</a><a href="#">Hyderabad</a>
+          <a href="#">Delhi</a><a href="#">Mumbai</a><a href="#">Pune</a>
+          <select aria-label="More cities">
+            <option>685 cities</option><option>Lucknow</option><option>Kochi</option><option>Indore</option><option>Jaipur</option>
+          </select>
+        </div>
+
+        <div class="f-col">
+          <h4>Life at Swiggy</h4>
+          <a href="#">Explore With Swiggy</a><a href="#">Swiggy News</a><a href="#">Snackables</a>
+          <h4 class="gap social-h">Social Links</h4>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="Pinterest"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+            <a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="f-bottom">
+        <p>For better experience, download the Swiggy app now</p>
+        <div class="stores">
+          <a href="#"><img src="images/icon-AppStore_lg30tv.png" alt="Download on the App Store"></a>
+          <a href="#"><img src="images/icon-GooglePlay_1_zixjxl.png" alt="Get it on Google Play"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
